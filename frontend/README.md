@@ -1,8 +1,80 @@
-# React + Vite
+# Paytm Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Paytm-like application built using MERN (MongoDB, Express.js, React, Node.js).
 
-Currently, two official plugins are available:
+## Features
+- User Authentication (Signup/Login)
+- Wallet Recharge & Transactions
+- Random Balance Generation (No Bank Integration)
+- Payment Gateway Integration
+- Transaction History
+- Secure API with JWT Authentication
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend:** React, TailwindCSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT
+- **State Management:** Recoil (if used)
+- **Real-time Updates:** Socket.IO (if applicable)
+
+## Installation & Setup
+### 1. Clone the Repository
+```sh
+git clone https://github.com/your-username/paytm-clone.git
+cd paytm-clone
+```
+
+### 2. Install Dependencies
+#### For Backend
+```sh
+cd backend
+npm install
+```
+#### For Frontend
+```sh
+cd frontend
+npm install
+```
+
+### 3. Configure Environment Variables
+Create a `.env` file in the `backend` directory with:
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PAYMENT_GATEWAY_KEY=your_payment_gateway_key
+```
+
+### 4. Run the Application
+#### Start Backend Server
+```sh
+cd backend
+npm start
+```
+#### Start Frontend
+```sh
+cd frontend
+npm start
+```
+
+The application will be available at `http://localhost:3000`.
+
+## Contributing
+1. Fork the repository.
+2. Create a new branch:
+   ```sh
+   git checkout -b feature-branch
+   ```
+3. Make your changes and commit:
+   ```sh
+   git commit -m "Add new feature"
+   ```
+4. Push the changes:
+   ```sh
+   git push origin feature-branch
+   ```
+5. Open a Pull Request on GitHub.
+
+## License
+This project is licensed under the MIT License.

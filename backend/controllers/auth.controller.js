@@ -24,11 +24,12 @@ export const signup = async (req, res, next) => {
         }
         next(error);
     }
-  };
+};
   
   export const signin = async (req, res, next) => {
     try {
-        const user = await loginUser(req.body);
+        const validateData = signinchema.parse(req.body);
+        const user = await loginUser(validateData);
         res.status(200).json(user);
     } catch (error) {
         if (error instanceof z.ZodError) {
@@ -36,4 +37,4 @@ export const signup = async (req, res, next) => {
         }
         next(error);
     }
-  };
+};

@@ -1,6 +1,6 @@
 # Paytm Clone
 
-👉 [Watch the demo on X (Twitter)]([https://x.com/yourusername/status/YourPostID](https://x.com/i/status/1901370443661000990))
+👉 [Watch the demo on Google Drive](https://drive.google.com/file/d/1HJi3gCKMjaoTgqKEnRtrPF1DbQx0ICbP/view?usp=drive_link)
 
 A full-stack Paytm-like application built using MERN (MongoDB, Express.js, React, Node.js).
 
